@@ -37,7 +37,7 @@ class TweetCellTableViewCell: UITableViewCell {
     
     
     @IBOutlet weak var favButton: UIButton!
-    
+    /*
     @IBAction func favoriteTweet(_ sender: Any) {
         let tobeFavorited = !favorited
         if (tobeFavorited)
@@ -53,7 +53,7 @@ class TweetCellTableViewCell: UITableViewCell {
                 })
     
     }
-    
+    */
     
     
     override func setSelected(_ selected: Bool, animated: Bool) {

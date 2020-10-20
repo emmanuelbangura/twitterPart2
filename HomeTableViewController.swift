@@ -22,8 +22,8 @@ class HomeTableViewController: UITableViewController {
         numberOfTweet = 20
         myRefreshControl.addTarget(self, action: #selector(loadTweets), for: .valueChanged)
         self.tableView.refreshControl = myRefreshControl
-        //self.tweetArray.rowHeight = UITableView.automaticDimension
-        //self.tweetArray.estimatedRowHeight = 150
+        self.tableView.rowHeight = UITableView.automaticDimension
+        self.tableView.estimatedRowHeight = 150
         
     }
         
@@ -101,8 +101,9 @@ class HomeTableViewController: UITableViewController {
         if let imageData = data {
             cell.profileImageView.image = UIImage(data: imageData)
         }
-        
+        /*
         cell.setFavorite(tweetArray[indexPath.row]["favorited"] as! Bool)
+         */
         
         return cell
     }
